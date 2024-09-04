@@ -1,0 +1,115 @@
+@use 'variaveis';
+
+header {
+    padding: 12px 2.5%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+        max-width: 48px;
+        width: 100%;
+        display: block;
+    }
+}
+
+.menu__mobile {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    max-width: 32px;
+    width: 100%;
+    cursor: pointer;
+
+    @media(max-width: 850px){
+        display: flex;
+        margin: 5px 10px;
+    }
+
+    span {
+        padding: 2px;
+        background-color: variaveis.$corPrincipal;
+    }
+}
+
+.nav__content {
+    display: flex;
+    gap: 5px;
+
+    @media (max-width: 850px) {
+        display: block;
+        text-align: center;
+        border-radius: 10px;
+        height: 0;
+        z-index: 1;
+        flex-direction: column;
+        position: absolute;
+        background-color: variaveis.$corMenumobile;
+        backdrop-filter: blur(15px);
+        max-width: 350px;
+        width: 100%;
+        top: 56px;
+        right: 2.5%;
+        overflow: hidden;
+        transition: .6s;
+
+        &--is-active {
+            display: flex;
+            height: 206px;
+        }
+
+        li {
+            padding: 0.7rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        max-width: 400px;
+    }
+
+
+    &__item {
+        border-radius: 1rem;
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        list-style: none;
+        padding: 5px 10px;
+
+        &::before {
+            content: '';
+            background-color: variaveis.$corPrincipal;
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: var(--eixoY);
+            left: var(--eixoX);
+            border-radius: 1rem;
+            transform: translate(-50%, -50%);
+            transition: width .8s, height .8s;
+
+            @media (max-width: 850px) {
+                display: none;
+            }
+        }
+
+        &:hover::before {
+            width: 1000%;
+            height: 1000%;
+            transition: width 1.9s, height 1.9s;
+        }
+
+        a {
+            padding: 1rem;
+            text-decoration: none;
+            color: variaveis.$corTexto;
+            position: relative;
+            z-index: 1;
+            font-weight: bold;
+        }
+    }
+}

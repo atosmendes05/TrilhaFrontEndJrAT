@@ -1,0 +1,22 @@
+@use 'variaveis';
+@use '_header';
+@use '_home';
+@use '_about';
+@use '_hobby';
+@use '_motivation';
+@use '_footer';
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: variaveis.$corDefundo;
+    color: variaveis.$corTexto;
+    line-height: 1.6;
+}
+

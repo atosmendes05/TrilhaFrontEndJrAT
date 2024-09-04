@@ -1,0 +1,87 @@
+@use 'variaveis';
+
+.sobre {
+    padding: 110px 3% 60px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    @media(max-width: 850px){
+        gap: 1rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    @media (max-width: 480px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    &__img{
+        max-width: 430px;
+        width: 100%;
+        margin: 0px auto;
+
+
+        img {
+            height: 430px;
+            width: 100%;
+            display: block;
+            border-radius: 1rem;
+            animation: float 3s ease-in-out infinite;
+
+            @media (max-width: 480px) {
+                margin: 0px auto;
+            }
+
+
+            @media(max-width: 1000px){
+                max-width: 350px;
+                height: 350px;
+            }
+
+
+            @keyframes float {
+                0% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-20px);
+                }
+                100% {
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+
+
+    &__content {
+
+        &__title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid variaveis.$corPrincipal;
+            padding-left: 5px;
+
+            span {
+                color: variaveis.$corPrincipal;
+            }
+        }
+
+        &__text {
+            margin-bottom: 10px;
+
+            &::before {
+                content: "• "; 
+                font-size: 1rem; 
+        
+                color: variaveis.$corTexto; 
+            }    
+        }   
+
+        
+    }
+
+
+}

@@ -1,0 +1,32 @@
+@use 'variaveis';
+
+.motivação {
+    padding: 110px 3% 60px;
+
+    &__title {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 20px;
+
+        span {
+            color: variaveis.$corPrincipal;
+        }
+    }
+
+
+    &__text {
+        line-height: 1.8;
+        padding: 2rem;
+        white-space: normal;
+        font-size: 1.1rem;
+        background-color: variaveis.$corDegosto;
+        border:1px solid variaveis.$corBordagosto;
+
+        span {
+            color: variaveis.$corPrincipal;
+        }
+    }
+
+
+
+}
