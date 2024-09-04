@@ -4,8 +4,8 @@
   "description": "",
 
   "scripts": {
-    "build": "parcel build source/index.html",
-    "dev": "parcel source/index.html source/styles/main.scss source/scripts/main.js ",
+    "build": "parcel build src/index.html",
+    "dev": "parcel src/index.html src/styles/main.scss src/scripts/main.js ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
