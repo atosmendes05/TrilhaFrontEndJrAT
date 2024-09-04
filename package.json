@@ -2,7 +2,7 @@
   "name": "trilhafrontendjr",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+
   "scripts": {
     "build": "parcel build source/index.html",
     "dev": "parcel source/index.html source/styles/main.scss source/scripts/main.js ",
