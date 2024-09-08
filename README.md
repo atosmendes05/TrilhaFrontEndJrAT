@@ -14,25 +14,14 @@ Você precisará do Node.js instalado para rodar o projeto. Clique aqui para bai
 
 <h4>Como Executar o Projeto</h4>
 Clone o repositório:
-git clone https://github.com/seu-usuario/pagina-apresentacao.git
+git clone https://github.com/atosmendes05/TrilhaFrontEndJrAT
 
 Acesse o diretório do projeto:
-cd pagina-apresentacao
+cd TrilhaFrontEndJrAT
 
 Instale as dependências:
 npm install
 
 Execute o projeto:
-npm start
+npm run dev 
 O Parcel iniciará o servidor de desenvolvimento e abrirá automaticamente a página em seu navegador.
-
-Estrutura do Projeto
-bash
-Copiar código
-├── src
-│   ├── index.html        # HTML semântico da página de apresentação
-│   ├── styles
-│   │   ├── main.scss     # Estilos principais utilizando Sass
-│   └── images
-│       └── imagens       # Imagens e outros recursos
-├── package.json          # Gerenciamento de dependências
