@@ -10,7 +10,7 @@ Design moderno e responsivo.
 Layout fluido adaptado para diversos tamanhos de tela.
 Uso de componentes Sass para facilitar a manutenção do CSS.
 <h4>Pré-requisitos</h4>
-Você precisará do Node.js instalado para rodar o projeto. Clique aqui para baixar.
+Você precisará do Node.js instalado para rodar o projeto.
 
 <h4>Como Executar o Projeto</h4>
 Clone o repositório:
@@ -20,8 +20,8 @@ Acesse o diretório do projeto:
 cd TrilhaFrontEndJrAT
 
 Instale as dependências:
-npm install
+npm install <br>
 
 Execute o projeto:
-npm run dev 
+npm run dev <br>
 O Parcel iniciará o servidor de desenvolvimento e abrirá automaticamente a página em seu navegador.
